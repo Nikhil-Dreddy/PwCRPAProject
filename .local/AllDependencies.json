@@ -1071,15 +1071,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nikhil\\.nuget\\packages\\": {}
+    "C:\\Users\\yan653\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAProject",
       "projectName": "RPAProject",
-      "projectPath": "C:\\Users\\Nikhil\\Documents\\UiPath\\RPAProject\\.local",
-      "packagesPath": "C:\\Users\\Nikhil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikhil\\Documents\\UiPath\\RPAProject\\.local"
+      "projectPath": "\\\\files.auckland.ac.nz\\myhome\\Documents\\UiPath\\PwCRPAProject\\.local",
+      "packagesPath": "C:\\Users\\yan653\\.nuget\\packages\\",
+      "outputPath": "\\\\files.auckland.ac.nz\\myhome\\Documents\\UiPath\\PwCRPAProject\\.local"
     },
     "frameworks": {
       "net461": {
