@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>416,782</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>416,1060</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CompanyScraping_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -59,7 +59,7 @@
       <AssemblyReference>System.Data.Entity</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CompanyScraping" sap:VirtualizedContainerService.HintSize="396,722" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CompanyScraping" sap:VirtualizedContainerService.HintSize="396,1000" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -68,11 +68,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="354,66" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="354,112" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Accepts CompanyName string input, and CompanyList as Input/Output &#xD;&#xA;Extracts all names for companies that are directed by this director, outputs them as CompanyList" />
+    <Sequence sap2010:Annotation.AnnotationText="From the director page list, extracts the table body" DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="354,108" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'Searchthe Page'" sap:VirtualizedContainerService.HintSize="452,436" sap2010:WorkflowViewState.IdRef="BrowserScope_6" InformativeScreenshot="4de3e50dd1839b4e11e6837019929d3a" Selector="&lt;html app='firefox.exe' title='Search the register' /&gt;">
@@ -104,15 +106,20 @@
         </ui:BrowserScope.Body>
       </ui:BrowserScope>
     </Sequence>
-    <Assign sap:VirtualizedContainerService.HintSize="354,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap2010:Annotation.AnnotationText="passed to layer above, contains the companies directed by this director" sap:VirtualizedContainerService.HintSize="354,102" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:ICollection(x:String)">[CompanyList]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="scg:ICollection(x:String)">[New List(of String)]</InArgument>
       </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="354,362" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Add the name of each company directed to the list collection of company names for this director" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="354,404" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -139,6 +146,13 @@
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
     <RemoveFromCollection x:TypeArguments="x:String" Collection="[CompanyList]" DisplayName="Remove From Collection" sap:VirtualizedContainerService.HintSize="354,22" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_1" Item="[CompanyName]" />
   </Sequence>

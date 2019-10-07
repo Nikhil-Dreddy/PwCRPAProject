@@ -1,7 +1,7 @@
 {
   "name": "RPAProject",
   "description": "PwC project",
-  "main": "Main.xaml",
+  "main": "CompanyExtracter.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.1]",
