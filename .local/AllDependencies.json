@@ -11,6 +11,22 @@
           "lib/Net40/ICSharpCode.AvalonEdit.dll": {}
         }
       },
+      "BalaReva.Externals.Activities/4.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ServiceProcess"
+        ],
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/BalaReva.Externals.Design.dll": {},
+          "lib/BalaReva.Externals.dll": {},
+          "lib/Ionic.Zip.dll": {},
+          "lib/Newtonsoft.Json.dll": {},
+          "lib/SharpCompress.dll": {}
+        }
+      },
       "BouncyCastle/1.8.1": {
         "type": "package",
         "compile": {
@@ -48,6 +64,15 @@
         },
         "runtime": {
           "lib/DocumentFormat.OpenXml.dll": {}
+        }
+      },
+      "DownloadFileActivities/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/Download File.dll": {}
         }
       },
       "Extended.Wpf.Toolkit/2.8.0": {
@@ -490,6 +515,21 @@
         "lib/Net40/ICSharpCode.AvalonEdit.xml"
       ]
     },
+    "BalaReva.Externals.Activities/4.0.3": {
+      "sha512": "ai07atNt2em8tO+fIal3Q5/LM5RotglT3cQSsKjaNATWevS7dre6v/8kq2jbSM9KvTVDPgIINwyCjDTkm25uEw==",
+      "type": "package",
+      "path": "balareva.externals.activities/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        "balareva.externals.activities.4.0.3.nupkg.sha512",
+        "balareva.externals.activities.nuspec",
+        "lib/BalaReva.Externals.Design.dll",
+        "lib/BalaReva.Externals.dll",
+        "lib/Ionic.Zip.dll",
+        "lib/Newtonsoft.Json.dll",
+        "lib/SharpCompress.dll"
+      ]
+    },
     "BouncyCastle/1.8.1": {
       "sha512": "nH+P67LavO5EcxjKdBxFfRdfdFhivS3Xp3+0br1KcpCI8DM6ksCWy6YYZjk7XFV+VsHGtkUovwIZ/vmCp42geA==",
       "type": "package",
@@ -549,6 +589,17 @@
         "documentformat.openxml.2.5.0.nupkg.sha512",
         "documentformat.openxml.nuspec",
         "lib/DocumentFormat.OpenXml.dll"
+      ]
+    },
+    "DownloadFileActivities/1.0.0": {
+      "sha512": "iGUr61r4jUIhANQehDSy2N6zgPRZ+SbzpJRQCzBg73SDXCjQ68sJFOyunBo3K0LWDu9HhTD9brYOQ23XWJzPxA==",
+      "type": "package",
+      "path": "downloadfileactivities/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "downloadfileactivities.1.0.0.nupkg.sha512",
+        "downloadfileactivities.nuspec",
+        "lib/Download File.dll"
       ]
     },
     "Extended.Wpf.Toolkit/2.8.0": {
@@ -1064,6 +1115,8 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "BalaReva.Externals.Activities >= 4.0.3 <= 4.0.3",
+      "DownloadFileActivities >= 1.0.0 <= 1.0.0",
       "UiPath.Excel.Activities >= 2.6.2 <= 2.6.2",
       "UiPath.Mail.Activities >= 1.5.1 <= 1.5.1",
       "UiPath.System.Activities >= 19.7.0 <= 19.7.0",
@@ -1071,19 +1124,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mfros\\.nuget\\packages\\": {}
+    "C:\\Users\\yan653\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAProject",
       "projectName": "RPAProject",
-      "projectPath": "C:\\Users\\mfros\\Documents\\RPA\\PwCRPAProject\\.local",
-      "packagesPath": "C:\\Users\\mfros\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfros\\Documents\\RPA\\PwCRPAProject\\.local"
+      "projectPath": "\\\\files.auckland.ac.nz\\myhome\\Documents\\UiPath\\PwCRPAProject\\.local",
+      "packagesPath": "C:\\Users\\yan653\\.nuget\\packages\\",
+      "outputPath": "\\\\files.auckland.ac.nz\\myhome\\Documents\\UiPath\\PwCRPAProject\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
+          "BalaReva.Externals.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[4.0.3, 4.0.3]"
+          },
+          "DownloadFileActivities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.0, 1.0.0]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",

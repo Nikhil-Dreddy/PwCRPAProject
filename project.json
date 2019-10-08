@@ -3,6 +3,8 @@
   "description": "PwC project",
   "main": "CompanyExtracter.xaml",
   "dependencies": {
+    "BalaReva.Externals.Activities": "[4.0.3]",
+    "DownloadFileActivities": "[1.0.0]",
     "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.1]",
     "UiPath.System.Activities": "[19.7.0]",
@@ -29,8 +31,7 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
-    },
-    "fileInfos": []
+    }
   },
   "expressionLanguage": "VisualBasic"
 }
