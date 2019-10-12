@@ -1124,15 +1124,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yan653\\.nuget\\packages\\": {}
+    "C:\\Users\\Menake\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAProject",
       "projectName": "RPAProject",
-      "projectPath": "\\\\files.auckland.ac.nz\\myhome\\Documents\\UiPath\\PwCRPAProject\\.local",
-      "packagesPath": "C:\\Users\\yan653\\.nuget\\packages\\",
-      "outputPath": "\\\\files.auckland.ac.nz\\myhome\\Documents\\UiPath\\PwCRPAProject\\.local"
+      "projectPath": "C:\\Users\\Menake\\Projects\\PwCRPAProject\\.local",
+      "packagesPath": "C:\\Users\\Menake\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Menake\\Projects\\PwCRPAProject\\.local"
     },
     "frameworks": {
       "net461": {
