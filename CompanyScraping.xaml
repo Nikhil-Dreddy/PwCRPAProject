@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>416,1060</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>416,1100</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CompanyScraping_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -68,7 +68,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="354,112" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Accepts CompanyName string input, and CompanyList as Input/Output &#xD;&#xA;Extracts all names for companies that are directed by this director, outputs them as CompanyList" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="354,112" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Accepts CompanyName string input, and CompanyList as Input/Output &#xA;Extracts all names for companies that are directed by this director, outputs them as CompanyList" />
     <Sequence sap2010:Annotation.AnnotationText="From the director page list, extracts the table body" DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="354,108" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
